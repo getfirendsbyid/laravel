@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'PRC',
 
     /*
     |--------------------------------------------------------------------------
@@ -147,7 +147,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Overtrue\LaravelWechat\ServiceProvider::class,
+
+
         /*
          * Application Service Providers...
          */
@@ -156,6 +157,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         *
+         */
+        Overtrue\LaravelWechat\ServiceProvider::class,
     ],
 
     /*

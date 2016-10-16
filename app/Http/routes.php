@@ -34,7 +34,23 @@ Route::group(['middleware' => ['web', 'wechat.oauth']], function () {
     });
 });
 
+Route::resource('/about','AboutController@index');
 
 Route::any('/wechat', 'WechatController@serve');
+
+Route::get('contact','AboutController@contact');
+
+Route::post('/register','UserController@store');
+
+Route::resource('posts','PostController');
+
+Route::get('/articles','ArticlesController@index');
+
+Route::get('/articles/{id}','ArticlesController@show');
+
+Route::get('/redistast','redistastController@index');
+
+
+
 
 
