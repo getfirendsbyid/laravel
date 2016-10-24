@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use geetest\Facades\geetest;
+
 
 class AboutController extends Controller
 {
@@ -13,6 +15,8 @@ class AboutController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         $data=array(

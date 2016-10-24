@@ -50,7 +50,14 @@ Route::get('/articles/{id}','ArticlesController@show');
 
 Route::get('/redistast','redistastController@index');
 
+Route::get('/login',function(){});
 
+Route::get('/captcha',function(){
+
+    $captcha = new \Laravist\GeeCaptcha\GeeCaptcha(env('CAPTCHA_ID'), env('PRIVATE_KEY'));
+    echo $captcha->GTServerIsNormal();
+
+});
 
 
 

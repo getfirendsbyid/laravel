@@ -148,7 +148,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-
         /*
          * Application Service Providers...
          */
@@ -158,9 +157,10 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /**
-         *
+         * 自己的包
          */
         Overtrue\LaravelWechat\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -208,6 +208,12 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Wechat' => Overtrue\LaravelWechat\Facade::class,
         'EasyWeChat' => Overtrue\LaravelWechat\Facade::class,
+
+        /**
+         *
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
