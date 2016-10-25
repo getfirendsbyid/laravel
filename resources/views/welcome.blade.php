@@ -1,6 +1,8 @@
 @extends('blade/app')
 @section('content')
 
+    123123
+
     {{--<ul data-am-widget="gallery" class="am-gallery am-avg-sm-2--}}
   {{--am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }" >--}}
         {{--<li>--}}
